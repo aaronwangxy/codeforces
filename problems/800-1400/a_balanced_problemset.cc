@@ -1,4 +1,3 @@
-
 #include <bits/stdc++.h>
 using namespace std;
  
@@ -8,7 +7,7 @@ void solve() {
     int x,n;
     cin >> x >> n;
  
-    // Find largest divisor d such that x/d > n
+    // Find largest divisor d such that x/d >= n
     int MAX = 0;
     for (int i = 1; i <= sqrt(x); ++i) {
         if (x % i == 0) {
