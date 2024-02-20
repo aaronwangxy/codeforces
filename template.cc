@@ -2,6 +2,7 @@
 using namespace std;
 
 #define ll long long
+#define vt vector
 
 void solve() {
     
