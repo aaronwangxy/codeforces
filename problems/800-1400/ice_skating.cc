@@ -5,10 +5,10 @@ using namespace std;
 #define vt vector
 
 void dfs(pair<int,int> node, set<pair<int,int>>& visited, map<pair<int,int>, vt<pair<int,int>>>& adjlist) {
+    if (visited.find(node) != visited.end()) return;
     visited.insert(node);
     for (auto& nei : adjlist[node]) {
-        if (visited.find(nei) == visited.end())
-            dfs(nei, visited, adjlist);
+        dfs(nei, visited, adjlist);
     }
 }
 
@@ -34,7 +34,6 @@ void solve() {
         pair<int,int> k = make_pair(points[i][0],points[i][1]);
         if (visited.find(k) == visited.end()) {
             ans += 1;
-            visited.insert(k);
             dfs(k, visited, adjlist);
         }
     }
