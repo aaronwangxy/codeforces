@@ -1,0 +1,6 @@
+Finished a,b,c,d didn't fully complete e
+
+1. Don't do unnecessary optimizations to save time, a) didn't require a binary search solution
+2. Remove "Case #" before submission (sad way to fail submission)
+3. Be more wary of edge cases
+4. 

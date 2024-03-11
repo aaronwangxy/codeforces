@@ -1,3 +1,6 @@
 /problems/*/*
 !problems/*/*.cc
+/contests/*/*
+!contests/*/*.cc
+!contests/*/*.txt
 .vscode
