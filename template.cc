@@ -4,6 +4,9 @@ using namespace std;
 #define ll long long
 #define vt vector
 
+const ll MOD = 1e9 + 7;
+const int dx[8] = {1, 0, -1, 0, 1, 1, -1, -1}, dy[8] = {0, 1, 0, -1, -1, 1, -1, 1};
+
 void solve() {
     
 }
@@ -14,7 +17,7 @@ int main() {
     int tc = 1;
     cin >> tc;
     for (int t = 1; t <= tc; t++) {
-        cout << "Case #" << t << ": ";
+        // cout << "Case #" << t << ": ";
         solve();
     }
 }
